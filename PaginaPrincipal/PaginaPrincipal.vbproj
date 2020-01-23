@@ -141,7 +141,10 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fotos\27fe64add48f92b164b5295d235de6bb--basque.png" />
+    <Content Include="fotos\alava.jpg" />
+    <Content Include="fotos\bizkaia.jpg" />
     <Content Include="fotos\descarga %281%29.png" />
+    <Content Include="fotos\gipuzkoa.jpg" />
     <Content Include="fotos\Lupa.png" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
