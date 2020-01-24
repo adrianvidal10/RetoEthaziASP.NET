@@ -41,7 +41,7 @@
             <input id="datepicker1" type="text" runat="server"/><asp:ImageButton ID="ImageButton2" runat="server" Height="21px" ImageUrl="~/fotos/Lupa.png" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="www.google.es">Mis Reservas</asp:HyperLink>
-        </div>
+            s</div>
     </form>
 </body>
 </html>
