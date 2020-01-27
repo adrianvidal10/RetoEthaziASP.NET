@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class PaginaPrincipal
+Partial Public Class Reserva
     
     '''<summary>
     '''Control form1.
@@ -48,6 +48,33 @@ Partial Public Class PaginaPrincipal
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''Control ImageButton7.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ImageButton7 As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''Control ImageButton5.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ImageButton5 As Global.System.Web.UI.WebControls.ImageButton
+    
+    '''<summary>
+    '''Control ImageButton6.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ImageButton6 As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
     '''Control TextBox1.
@@ -122,29 +149,47 @@ Partial Public Class PaginaPrincipal
     Protected WithEvents CheckBoxList1 As Global.System.Web.UI.WebControls.CheckBoxList
     
     '''<summary>
-    '''Control ImageButton4.
+    '''Control Label4.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ImageButton4 As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control ImageButton5.
+    '''Control Label3.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ImageButton5 As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control ImageButton6.
+    '''Control ListBox1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ImageButton6 As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents ListBox1 As Global.System.Web.UI.WebControls.ListBox
+    
+    '''<summary>
+    '''Control Label6.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control Label5.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
 End Class
