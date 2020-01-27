@@ -153,6 +153,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Buscar.aspx" />
+    <Content Include="ConfirmarReserva.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -228,6 +229,13 @@
     </Compile>
     <Compile Include="Buscar.aspx.vb">
       <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmarReserva.aspx.designer.vb">
+      <DependentUpon>ConfirmarReserva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmarReserva.aspx.vb">
+      <DependentUpon>ConfirmarReserva.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.vb">
