@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class PaginaPrincipal
     
     '''<summary>
+    '''Control AdRotator2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AdRotator2 As Global.System.Web.UI.WebControls.AdRotator
+    
+    '''<summary>
     '''Control form1.
     '''</summary>
     '''<remarks>
@@ -122,29 +131,29 @@ Partial Public Class PaginaPrincipal
     Protected WithEvents CheckBoxList1 As Global.System.Web.UI.WebControls.CheckBoxList
     
     '''<summary>
-    '''Control ImageButton4.
+    '''Control ImgB_Bizkaia.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ImageButton4 As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents ImgB_Bizkaia As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''Control ImageButton5.
+    '''Control ImgB_Gipuzkoa.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ImageButton5 As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents ImgB_Gipuzkoa As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''Control ImageButton6.
+    '''Control ImgB_Alava.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ImageButton6 As Global.System.Web.UI.WebControls.ImageButton
+    Protected WithEvents ImgB_Alava As Global.System.Web.UI.WebControls.ImageButton
 End Class

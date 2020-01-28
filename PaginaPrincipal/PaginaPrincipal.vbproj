@@ -163,7 +163,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fotos\27fe64add48f92b164b5295d235de6bb--basque.png" />
     <Content Include="fotos\alava.jpg" />
+    <Content Include="fotos\Albergue.jpg" />
     <Content Include="fotos\bizkaia.jpg" />
+    <Content Include="fotos\bus.jpg" />
+    <Content Include="fotos\camping.jpg" />
+    <Content Include="fotos\casa-rural.jpg" />
     <Content Include="fotos\descarga %281%29.png" />
     <Content Include="fotos\gipuzkoa.jpg" />
     <Content Include="fotos\Lupa.png" />
@@ -179,9 +183,10 @@
     <Content Include="Inicio_Sesion.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="Registrar.aspx" />
+    <Content Include="Reserva.aspx" />
+    <Content Include="XMLFile1.xml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="PaginaPrincipal.aspx" />
-    <Content Include="Reserva.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -293,6 +298,13 @@
     </Compile>
     <Compile Include="Perfil.aspx.vb">
       <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reserva.aspx.designer.vb">
+      <DependentUpon>Reserva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserva.aspx.vb">
+      <DependentUpon>Reserva.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.vb">

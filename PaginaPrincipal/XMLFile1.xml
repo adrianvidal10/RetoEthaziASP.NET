@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/fotos/Albergue.jpg</ImageUrl>
+     <Impressions>10</Impressions>
+    <KeyWord>Fondo</KeyWord>
+    <height>100%</height>
+    <width>100%</width>
+   
+  </Ad>
+
+  <Ad>
+    <ImageUrl>~/fotos/bus.jpg</ImageUrl>
+    <Impressions>10</Impressions>
+    <KeyWord>Fondo</KeyWord>
+    <height>100%</height>
+    <width>100%</width>
+    
+  </Ad>
+
+  <Ad>
+    <ImageUrl>~/fotos/camping.jpg</ImageUrl>
+    <Impressions>10</Impressions>
+    <KeyWord>Fondo</KeyWord>
+    <height>100%</height>
+    <width>100%</width>
+    
+  </Ad>
+
+  <Ad>
+    <ImageUrl>~/fotos/casa-rural.jpg</ImageUrl>
+    <Impressions>10</Impressions>
+    <KeyWord>Fondo</KeyWord>
+    <height>100%</height>
+    <width>100%</width>
+   
+  </Ad>
+
+
+</Advertisements>
