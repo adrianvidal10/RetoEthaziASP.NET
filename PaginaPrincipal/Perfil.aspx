@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Registrar.aspx.vb" Inherits="PaginaPrincipal.WebForm1" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Perfil.aspx.vb" Inherits="PaginaPrincipal.Perfil" %>
 
 <!DOCTYPE html>
 
@@ -9,10 +9,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="height: 505px">
-            <p style="height: 495px; margin-left: 360px">
-                <br />
-                <br />
+        <div>
                 <asp:Label ID="lbl_Nombre" runat="server" Text="Nombre"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_Nombre" runat="server"></asp:TextBox>
@@ -53,17 +50,37 @@
                 <br />
                 <asp:Label ID="lbl_Contrasena" runat="server" Text="Contraseña"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="tx_Contrasena" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:TextBox ID="tx_Contrasena" runat="server"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" Text="Cambiar contraseña" />
                 <br />
                 <br />
+                <asp:Label ID="lbl_NuevaContrasena" runat="server" Text="Nueva Contraseña"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="tx_NuevaContrasena" runat="server"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Label ID="lbl_ConfirmarContrasena" runat="server" Text="Confirmar Contraseña"></asp:Label>
-&nbsp;&nbsp;&nbsp;
-                <asp:TextBox ID="tx_ConfirmarContrasena" runat="server" TextMode="Password"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Btn_registro" runat="server" Text="Registro" />
-            </p>
-            <p style="height: 495px; margin-left: 320px">
-                &nbsp;</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:TextBox ID="tx_ConfirmarContrasena" runat="server"></asp:TextBox>
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Modificar perfil" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button2" runat="server" Text="Aceptar cambios" Width="115px" />
+            <br />
+            <br />
+            <br />
+            <asp:ListBox ID="ListBox1" runat="server" Height="207px" Width="714px"></asp:ListBox>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </form>
 </body>

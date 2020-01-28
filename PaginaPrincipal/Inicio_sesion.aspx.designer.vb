@@ -11,7 +11,7 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Registrar
+Partial Public Class Inicio_Sesion
     
     '''<summary>
     '''Control form1.
