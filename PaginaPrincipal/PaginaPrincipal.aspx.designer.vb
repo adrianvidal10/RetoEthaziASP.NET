@@ -131,6 +131,15 @@ Partial Public Class PaginaPrincipal
     Protected WithEvents CheckBoxList1 As Global.System.Web.UI.WebControls.CheckBoxList
     
     '''<summary>
+    '''Control RadioButtonList1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents RadioButtonList1 As Global.System.Web.UI.WebControls.RadioButtonList
+    
+    '''<summary>
     '''Control ImgB_Bizkaia.
     '''</summary>
     '''<remarks>

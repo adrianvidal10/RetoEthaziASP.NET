@@ -4,7 +4,6 @@ Public Class Perfil
     Dim cnn As MySqlConnection
     Dim sql As String
     Dim resultado As Integer
-    Dim texto As String
     Dim cadenaconexion As String = "server=192.168.106.14;database=retoethazi;user id=root2;password=root2;port=3306"
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         cnn = New MySqlConnection(cadenaconexion)
