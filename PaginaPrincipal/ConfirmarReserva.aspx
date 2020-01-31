@@ -6,6 +6,14 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  });
+  $(function () {
+    $("#datepicker1").datepicker();
+   });
+  </script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -27,17 +35,25 @@
             <br />
             <asp:Label ID="Label4" runat="server" Text="Fecha Inicio :"></asp:Label>
 &nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            <input id="datepicker" type="text" runat="server"/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Label ID="Label5" runat="server" Text="Fecha Fin :"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            <input id="datepicker1" type="text" runat="server"/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             <br />
             <asp:Label ID="Label6" runat="server" Text="Nº Habitaciones :"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem>1</asp:ListItem>
+                <asp:ListItem>2</asp:ListItem>
+                <asp:ListItem>3</asp:ListItem>
+                <asp:ListItem>4</asp:ListItem>
+                <asp:ListItem>5</asp:ListItem>
+                <asp:ListItem>6</asp:ListItem>
+                <asp:ListItem>7</asp:ListItem>
+                <asp:ListItem>8</asp:ListItem>
             </asp:DropDownList>
             <br />
             <br />

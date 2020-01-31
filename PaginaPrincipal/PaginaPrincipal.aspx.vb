@@ -12,6 +12,9 @@
         If Not TextBox1.Text = "" Then
             busqueda = TextBox1.Text
         End If
+        If RadioButtonList1.SelectedIndex = True Then
+            tipo = RadioButtonList1.SelectedValue
+        End If
         If Not datepicker.Value = "" Then
             F_Inicio = datepicker.Value
         End If
@@ -31,6 +34,9 @@
         If Not TextBox1.Text = "" Then
             busqueda = TextBox1.Text
         End If
+        If RadioButtonList1.SelectedIndex = True Then
+            tipo = RadioButtonList1.SelectedValue
+        End If
         If Not datepicker.Value = "" Then
             F_Inicio = datepicker.Value
         End If
@@ -46,6 +52,9 @@
         Clicada3 = False
         If CheckBoxList1.SelectedIndex = True Then
             Opciones = CheckBoxList1.SelectedValue
+        End If
+        If RadioButtonList1.SelectedIndex = True Then
+            tipo = RadioButtonList1.SelectedValue
         End If
         If Not TextBox1.Text = "" Then
             busqueda = TextBox1.Text
@@ -66,6 +75,9 @@
         If CheckBoxList1.SelectedIndex = True Then
             Opciones = CheckBoxList1.SelectedValue
         End If
+        If RadioButtonList1.SelectedIndex = True Then
+            tipo = RadioButtonList1.SelectedValue
+        End If
         If Not TextBox1.Text = "" Then
             busqueda = TextBox1.Text
         End If
@@ -78,7 +90,5 @@
         Response.Redirect("~/Reserva.aspx")
     End Sub
 
-    Protected Sub AdRotator2_AdCreated(sender As Object, e As AdCreatedEventArgs) Handles AdRotator2.AdCreated
 
-    End Sub
 End Class

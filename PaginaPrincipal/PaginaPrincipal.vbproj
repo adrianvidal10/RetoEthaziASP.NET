@@ -52,6 +52,9 @@
     <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\Admin1\Desktop\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
@@ -184,6 +187,7 @@
     <Content Include="Perfil.aspx" />
     <Content Include="Registrar.aspx" />
     <Content Include="Reserva.aspx" />
+    <Content Include="Factura.aspx" />
     <Content Include="XMLFile1.xml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="PaginaPrincipal.aspx" />
@@ -335,6 +339,13 @@
       <DependentUpon>Registrar.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Factura.aspx.designer.vb">
+      <DependentUpon>Factura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Factura.aspx.vb">
+      <DependentUpon>Factura.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -369,6 +380,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="facturas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

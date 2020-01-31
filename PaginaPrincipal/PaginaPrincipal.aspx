@@ -58,8 +58,16 @@
             <asp:CheckBoxList ID="CheckBoxList1" runat="server">
                 <asp:ListItem>Precio</asp:ListItem>
                 <asp:ListItem>Categoria</asp:ListItem>
-                <asp:ListItem>Capacidad</asp:ListItem>
             </asp:CheckBoxList>
+             <br />
+             <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                 <asp:ListItem>Alojamiento</asp:ListItem>
+                 <asp:ListItem>Albergue</asp:ListItem>
+                 <asp:ListItem>Camping</asp:ListItem>
+             </asp:RadioButtonList>
+             <br />
+             <br />
+             <br />
             <p style="margin-left: 40px">
             <br />
             <br />

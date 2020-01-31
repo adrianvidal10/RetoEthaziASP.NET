@@ -86,13 +86,13 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control TextBox4.
+    '''Control datepicker.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBox4 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents datepicker As Global.System.Web.UI.HtmlControls.HtmlInputText
     
     '''<summary>
     '''Control Label5.
@@ -104,13 +104,13 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control TextBox5.
+    '''Control datepicker1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBox5 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents datepicker1 As Global.System.Web.UI.HtmlControls.HtmlInputText
     
     '''<summary>
     '''Control Label6.
