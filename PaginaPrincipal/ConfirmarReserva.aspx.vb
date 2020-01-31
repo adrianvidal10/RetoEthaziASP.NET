@@ -10,7 +10,7 @@ Public Class ConfirmarReserva
         If tipo = "alojamiento" Then
 
         End If
-        sql("select Nombre, Ubicacion from " & tipo & "t,  ")
+        ' sql("select Nombre, Ubicacion from " & tipo & "t,  ")
         Try
             cnn.Open()
 

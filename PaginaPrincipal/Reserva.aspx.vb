@@ -15,30 +15,30 @@ Public Class Reserva
             ImageButton6.Visible = False
         End If
 
-        sql = "SELECT Nombre,Ubicacion,Categoria,Precio FROM " & tipo & ""
+        'sql = "SELECT Nombre,Ubicacion,Categoria,Precio FROM " & tipo & ""
 
 
-        Dim cmd As New MySqlCommand(sql, cnn)
+        'Dim cmd As New MySqlCommand(sql, cnn)
 
 
-        Dim dr As MySqlDataReader = Nothing
+        'Dim dr As MySqlDataReader = Nothing
 
-        Try
-            cnn.Open()
-            dr = cmd.ExecuteReader
-            Dim x As Integer
-            ListView1.Items.Clear()
+        'Try
+        '    cnn.Open()
+        '    dr = cmd.ExecuteReader
+        '    Dim x As Integer
+        '    ListView1.Items.Clear()
 
-            If dr.Read Then
-                ListView1.Items.Add(dr.Item(0))
-                ListView1.Items(X).SubItems.Add(dr.Item(1)) = dr("Nombre").ToString()
+        '    If dr.Read Then
+        '        ListView1.Items.Add(dr.Item(0))
+        '        ListView1.Items(X).SubItems.Add(dr.Item(1)) = dr("Nombre").ToString()
 
-            End If
-        Catch ex As Exception
+        '    End If
+        'Catch ex As Exception
 
-        Finally
+        'Finally
 
-        End Try
+        'End Try
 
 
     End Sub
@@ -107,5 +107,13 @@ Public Class Reserva
             F_Fin = datepicker1.Value
         End If
         Response.Redirect("~/Reserva.aspx")
+    End Sub
+
+    Private Sub RadioButtonList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles RadioButtonList1.SelectedIndexChanged
+        cnn = New MySqlConnection(cadenaconexion)
+        If RadioButtonList1.SelectedValue = "Camping" Then
+            GridView2.DataSourceID = Nothing
+            GridView2.DataSourceID = SqlCamping.ID
+        End If
     End Sub
 End Class
