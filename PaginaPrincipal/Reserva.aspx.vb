@@ -3,9 +3,6 @@ Public Class Reserva
     Inherits System.Web.UI.Page
     Dim cnn As MySqlConnection
     Dim sql As String
-    Dim sql2 As String
-    Dim sql3 As String
-    Dim sql4 As String
     Dim resultado As Integer
     Dim cadenaconexion As String = "server=192.168.106.14;database=retoethazi;user id=root2;password=root2;port=3306"
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -18,30 +15,30 @@ Public Class Reserva
             ImageButton6.Visible = False
         End If
 
-        sql = "SELECT Nombre,Ubicacion,Categoria,Precio FROM " & tipo & ""
+        'sql = "SELECT Nombre,Ubicacion,Categoria,Precio FROM " & tipo & ""
 
 
-        Dim cmd As New MySqlCommand(sql, cnn)
+        'Dim cmd As New MySqlCommand(sql, cnn)
 
 
-        Dim dr As MySqlDataReader = Nothing
+        'Dim dr As MySqlDataReader = Nothing
 
-        Try
-            cnn.Open()
-            dr = cmd.ExecuteReader
-            Dim x As Integer
-            ListView1.Items.Clear()
+        'Try
+        '    cnn.Open()
+        '    dr = cmd.ExecuteReader
+        '    Dim x As Integer
+        '    ListView1.Items.Clear()
 
-            If dr.Read Then
-                ListView1.Items.Add(dr.Item(0))
-                'ListView1.Items(X).SubItems.Add(dr.Item(1)) = dr("Nombre").ToString()
+        '    If dr.Read Then
+        '        ListView1.Items.Add(dr.Item(0))
+        '        ListView1.Items(X).SubItems.Add(dr.Item(1)) = dr("Nombre").ToString()
 
-            End If
-        Catch ex As Exception
+        '    End If
+        'Catch ex As Exception
 
-        Finally
+        'Finally
 
-        End Try
+        'End Try
 
 
     End Sub
@@ -112,7 +109,11 @@ Public Class Reserva
         Response.Redirect("~/Reserva.aspx")
     End Sub
 
-    Protected Sub AdRotator2_AdCreated(sender As Object, e As AdCreatedEventArgs) Handles AdRotator2.AdCreated
-
+    Private Sub RadioButtonList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles RadioButtonList1.SelectedIndexChanged
+        cnn = New MySqlConnection(cadenaconexion)
+        If RadioButtonList1.SelectedValue = "Camping" Then
+            GridView2.DataSourceID = Nothing
+            GridView2.DataSourceID = SqlCamping.ID
+        End If
     End Sub
 End Class
