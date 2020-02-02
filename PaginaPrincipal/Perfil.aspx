@@ -8,6 +8,7 @@
     <title></title>
 </head>
 <body>
+     <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/XMLFile1.xml" Width="100%" Height="100%"  />
     <form id="form1" runat="server">
         <div>
                 <asp:Label ID="lbl_Nombre" runat="server" Text="Nombre"></asp:Label>
@@ -68,6 +69,8 @@
             <asp:Button ID="Button1" runat="server" Text="Modificar perfil" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" Text="Aceptar cambios" Width="115px" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Btn_volver" runat="server" PostBackUrl="~/PaginaPrincipal.aspx" Text="Volver" />
             <br />
             <br />
             <br />

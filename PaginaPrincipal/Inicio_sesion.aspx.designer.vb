@@ -23,6 +23,15 @@ Partial Public Class Inicio_Sesion
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
+    '''Control AdRotator2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AdRotator2 As Global.System.Web.UI.WebControls.AdRotator
+    
+    '''<summary>
     '''Control Label1.
     '''</summary>
     '''<remarks>

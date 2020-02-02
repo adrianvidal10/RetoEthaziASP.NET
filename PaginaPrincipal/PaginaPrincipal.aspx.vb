@@ -6,9 +6,7 @@
     End Sub
 
     Protected Sub ImageButton1_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton1.Click
-        If CheckBoxList1.SelectedIndex = True Then
-            Opciones = CheckBoxList1.SelectedValue
-        End If
+
         If Not TextBox1.Text = "" Then
             busqueda = TextBox1.Text
         End If
@@ -28,9 +26,7 @@
         Clicada1 = False
         Clicada2 = False
         Clicada3 = True
-        If CheckBoxList1.SelectedIndex = True Then
-            Opciones = CheckBoxList1.SelectedValue
-        End If
+
         If Not TextBox1.Text = "" Then
             busqueda = TextBox1.Text
         End If
@@ -50,9 +46,7 @@
         Clicada1 = True
         Clicada2 = False
         Clicada3 = False
-        If CheckBoxList1.SelectedIndex = True Then
-            Opciones = CheckBoxList1.SelectedValue
-        End If
+
         If RadioButtonList1.SelectedIndex = True Then
             tipo = RadioButtonList1.SelectedValue
         End If
@@ -72,9 +66,7 @@
         Clicada1 = False
         Clicada2 = True
         Clicada3 = False
-        If CheckBoxList1.SelectedIndex = True Then
-            Opciones = CheckBoxList1.SelectedValue
-        End If
+
         If RadioButtonList1.SelectedIndex = True Then
             tipo = RadioButtonList1.SelectedValue
         End If

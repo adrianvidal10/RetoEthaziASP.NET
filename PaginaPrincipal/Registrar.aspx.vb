@@ -36,7 +36,7 @@ Public Class WebForm1
             Try
                 cnn.Open()
                 resultado = cmd.ExecuteNonQuery()
-
+                Nombre_usuario = Me.tx_Nombre.Text
                 Response.Redirect("~/PaginaPrincipal.aspx")
 
             Catch ex As Exception

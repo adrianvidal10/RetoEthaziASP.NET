@@ -66,6 +66,7 @@ Public Class Perfil
         Me.lbl_NuevaContrasena.Visible = False
         Me.tx_NuevaContrasena.Visible = False
         Me.Button3.Visible = True
+        Me.Button1.Visible = False
     End Sub
 
 

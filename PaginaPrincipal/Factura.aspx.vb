@@ -72,7 +72,7 @@ Public Class WebForm2
             'Creamos el objeto documento PDF
             Dim documentoPDF As New Document
             PdfWriter.GetInstance(documentoPDF,
-                    New FileStream("C:\Users\Admin1\Downloads\facturas\RESERVA" & reserva & ".pdf", FileMode.Create))
+                    New FileStream("~\facturas\RESERVA" & reserva & ".pdf", FileMode.Create))
             documentoPDF.Open()
 
             'Escribimos el texto en el objeto documento PDF

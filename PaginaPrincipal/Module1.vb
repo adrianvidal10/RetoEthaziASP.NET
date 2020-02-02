@@ -12,4 +12,5 @@
     Friend nhabitaciones As Integer
     Friend nombreAloj As String
     Friend ubicacion As String
+    Friend Nombre_usuario As String
 End Module

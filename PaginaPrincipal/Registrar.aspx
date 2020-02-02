@@ -8,6 +8,7 @@
     <title></title>
 </head>
 <body>
+    <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/XMLFile1.xml" Width="100%" Height="100%"  />
     <form id="form1" runat="server">
         <div style="height: 505px">
             <p style="height: 495px; margin-left: 360px">
@@ -60,8 +61,12 @@
 &nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_ConfirmarContrasena" runat="server" TextMode="Password"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Btn_registro" runat="server" Text="Registro" />
+                <asp:Button ID="Btn_registro" runat="server" Text="Guardar Registro" />
+            &nbsp;
+                <asp:Button ID="Button1" runat="server" PostBackUrl="~/PaginaPrincipal.aspx" Text="Volver" />
             </p>
+            <p style="height: 495px; margin-left: 360px">
+                &nbsp;</p>
             <p style="height: 495px; margin-left: 320px">
                 &nbsp;</p>
         </div>

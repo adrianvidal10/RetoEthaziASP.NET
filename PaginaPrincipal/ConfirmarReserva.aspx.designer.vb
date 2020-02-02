@@ -32,13 +32,13 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txb_Nombre.
+    '''Control TextBox1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txb_Nombre As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Control Label2.
@@ -50,13 +50,13 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txb_Ubicacion.
+    '''Control TextBox2.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txb_Ubicacion As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Control Label3.
@@ -68,13 +68,13 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txb_Dni.
+    '''Control TextBox3.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txb_Dni As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TextBox3 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Control Label4.
@@ -86,13 +86,22 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control datepicker.
+    '''Control Tx_fechainicio.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents datepicker As Global.System.Web.UI.HtmlControls.HtmlInputText
+    Protected WithEvents Tx_fechainicio As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Control Calendar1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Calendar1 As Global.System.Web.UI.WebControls.Calendar
     
     '''<summary>
     '''Control Label5.
@@ -104,13 +113,22 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control datepicker1.
+    '''Control Tx_fechafin.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents datepicker1 As Global.System.Web.UI.HtmlControls.HtmlInputText
+    Protected WithEvents Tx_fechafin As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Control Calendar2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Calendar2 As Global.System.Web.UI.WebControls.Calendar
     
     '''<summary>
     '''Control Label6.
@@ -122,13 +140,13 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label6 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control ddl_Habitaciones.
+    '''Control DropDownList1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ddl_Habitaciones As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents DropDownList1 As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''Control Label7.
@@ -140,13 +158,13 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label7 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txb_Precio.
+    '''Control TextBox6.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txb_Precio As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents TextBox6 As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Control Button1.

@@ -7,9 +7,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 </head>
-<body>
+<body style="max-width :100%;max-height:100%">
     <form id="form1" runat="server">
+        
          <div style="margin-left: 440px">
+               <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/XMLFile1.xml" Width="100%" Height="100%"  />
             <asp:Label ID="Label1" runat="server" Text="DNI: "></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="Tx_Dni" runat="server"></asp:TextBox>
@@ -27,6 +29,7 @@
             <br />
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registrar.aspx">¿No tienes una cuenta? Registrate ahora!!</asp:HyperLink>
         </div>
+  
     </form>
 </body>
 </html>

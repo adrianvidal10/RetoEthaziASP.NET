@@ -149,15 +149,6 @@ Partial Public Class Reserva
     Protected WithEvents HyperLink1 As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
-    '''Control CheckBoxList1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents CheckBoxList1 As Global.System.Web.UI.WebControls.CheckBoxList
-    
-    '''<summary>
     '''Control RadioButtonList1.
     '''</summary>
     '''<remarks>
@@ -167,22 +158,13 @@ Partial Public Class Reserva
     Protected WithEvents RadioButtonList1 As Global.System.Web.UI.WebControls.RadioButtonList
     
     '''<summary>
-    '''Control Label4.
+    '''Control Lbl_Ubicacion.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control Label3.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Lbl_Ubicacion As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Control GridView2.
@@ -210,4 +192,31 @@ Partial Public Class Reserva
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''Control SqlAlbregue.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlAlbregue As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''Control Sqlalojamiento.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Sqlalojamiento As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''Control SqlUbicacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlUbicacion As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

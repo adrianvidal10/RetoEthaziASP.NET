@@ -47,9 +47,7 @@ Public Class Reserva
         Clicada1 = True
         Clicada2 = False
         Clicada3 = False
-        If CheckBoxList1.SelectedIndex = True Then
-            Opciones = CheckBoxList1.SelectedValue
-        End If
+        Me.Lbl_Ubicacion.Text = "Bizkaia"
         If RadioButtonList1.SelectedIndex = True Then
             tipo = RadioButtonList1.SelectedValue
         End If
@@ -69,9 +67,7 @@ Public Class Reserva
         Clicada1 = False
         Clicada2 = True
         Clicada3 = False
-        If CheckBoxList1.SelectedIndex = True Then
-            Opciones = CheckBoxList1.SelectedValue
-        End If
+        Me.Lbl_Ubicacion.Text = "Gipuzkoa"
         If RadioButtonList1.SelectedIndex = True Then
             tipo = RadioButtonList1.SelectedValue
         End If
@@ -91,9 +87,7 @@ Public Class Reserva
         Clicada1 = False
         Clicada2 = False
         Clicada3 = True
-        If CheckBoxList1.SelectedIndex = True Then
-            Opciones = CheckBoxList1.SelectedValue
-        End If
+        Me.Lbl_Ubicacion.Text = "Alava"
         If RadioButtonList1.SelectedIndex = True Then
             tipo = RadioButtonList1.SelectedValue
         End If

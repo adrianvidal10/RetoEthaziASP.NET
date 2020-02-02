@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class Perfil
     
     '''<summary>
+    '''Control AdRotator2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents AdRotator2 As Global.System.Web.UI.WebControls.AdRotator
+    
+    '''<summary>
     '''Control form1.
     '''</summary>
     '''<remarks>
@@ -228,6 +237,15 @@ Partial Public Class Perfil
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''Control Btn_volver.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Btn_volver As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
     '''Control ListBox1.

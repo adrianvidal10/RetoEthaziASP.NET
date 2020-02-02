@@ -32,8 +32,9 @@ Public Class Inicio_Sesion
 
             dr = cmd1.ExecuteReader
             If dr.HasRows Then
-                MsgBox("Aceptado en el sistema")
+                Nombre_usuario = Me.Tx_Dni.Text
                 Response.Redirect("~/PaginaPrincipal.aspx")
+
             Else
                 MsgBox("Usuario o contraseña erronea")
                 Btn_Aceptar.PostBackUrl = False
