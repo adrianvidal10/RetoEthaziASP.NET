@@ -7,7 +7,7 @@
             Me.Button1.Visible = False
             Me.Button2.Visible = False
             Me.HyperLink1.Visible = True
-            Label3.Text = "Hola : " & Nombre_usuario
+            Label3.Text = "Hola  " & Nombre_usuario
             Me.Label3.Visible = True
         End If
     End Sub

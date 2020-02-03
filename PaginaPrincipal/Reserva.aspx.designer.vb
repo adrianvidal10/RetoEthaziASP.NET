@@ -113,15 +113,6 @@ Partial Public Class Reserva
     Protected WithEvents ImageButton1 As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''Control HyperLink1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents HyperLink1 As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
     '''Control RadioButtonList1.
     '''</summary>
     '''<remarks>

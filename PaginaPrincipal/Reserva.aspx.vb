@@ -35,8 +35,8 @@ Public Class Reserva
         If Nombre_usuario IsNot "" Then
             Me.Button1.Visible = False
             Me.Button2.Visible = False
-            Me.HyperLink1.Visible = True
-            Label1.Text = "Hola usuario: " & Nombre_usuario
+
+            Label1.Text = "Hola  " & Nombre_usuario
             Me.Label1.Visible = True
         End If
         'sql = "SELECT Nombre,Ubicacion,Categoria,Precio FROM " & tipo & ""
