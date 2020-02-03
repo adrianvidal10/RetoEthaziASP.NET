@@ -49,7 +49,7 @@ Public Class WebForm2
         ElseIf tipo = "albergue" Then
             eleccion = "reserva_alb"
         End If
-        sql = "select Id_Reserva FROM reservas where Dni = " & dni
+        sql = "inser Id_Reserva FROM reservas where Dni = " & dni
         Try
             cnn.Open()
 
