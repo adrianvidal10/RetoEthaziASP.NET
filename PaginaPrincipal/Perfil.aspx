@@ -74,7 +74,33 @@
             <br />
             <br />
             <br />
-            <asp:ListBox ID="ListBox1" runat="server" Height="207px" Width="714px"></asp:ListBox>
+                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IdReser" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+                    <AlternatingRowStyle BackColor="White" />
+                    <Columns>
+                        <asp:BoundField DataField="IdReser" HeaderText="IdReser" InsertVisible="False" ReadOnly="True" SortExpression="IdReser" />
+                        <asp:BoundField DataField="Fk_IdCliente" HeaderText="Fk_IdCliente" SortExpression="Fk_IdCliente" />
+                        <asp:BoundField DataField="Fk_IdEsta" HeaderText="Fk_IdEsta" SortExpression="Fk_IdEsta" />
+                        <asp:BoundField DataField="Dni" HeaderText="Dni" SortExpression="Dni" />
+                        <asp:BoundField DataField="fecha_ini" HeaderText="fecha_ini" SortExpression="fecha_ini" />
+                        <asp:BoundField DataField="FechaFin" HeaderText="FechaFin" SortExpression="FechaFin" />
+                        <asp:BoundField DataField="Habitaciones" HeaderText="Habitaciones" SortExpression="Habitaciones" />
+                        <asp:BoundField DataField="Precio" HeaderText="Precio" SortExpression="Precio" />
+                    </Columns>
+                    <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+                    <SortedAscendingCellStyle BackColor="#FDF5AC" />
+                    <SortedAscendingHeaderStyle BackColor="#4D0000" />
+                    <SortedDescendingCellStyle BackColor="#FCF6C0" />
+                    <SortedDescendingHeaderStyle BackColor="#820000" />
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:retoethaziConnectionString %>" ProviderName="<%$ ConnectionStrings:retoethaziConnectionString.ProviderName %>" SelectCommand="Select * From reservas Where Dni = '20234428V'">
+                    <SelectParameters>
+                        <asp:Parameter DefaultValue="dni" Name="@dni" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
             <br />
             <br />
             <br />

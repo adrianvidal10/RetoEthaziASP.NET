@@ -7,15 +7,15 @@
             Me.Button1.Visible = False
             Me.Button2.Visible = False
             Me.HyperLink1.Visible = True
-            Label3.Text = "Hola usuario: " & Nombre_usuario
+            Label3.Text = "Hola : " & Nombre_usuario
             Me.Label3.Visible = True
         End If
     End Sub
 
     Protected Sub ImageButton1_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton1.Click
 
-        If Not TextBox1.Text = "" Then
-            busqueda = TextBox1.Text
+        If TextBox1.Text IsNot "" Then
+            nombreestab = TextBox1.Text
         End If
 
         Response.Redirect("~/Reserva.aspx")

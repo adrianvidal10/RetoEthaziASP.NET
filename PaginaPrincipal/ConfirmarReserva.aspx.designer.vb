@@ -95,22 +95,13 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control Tx_fechainicio.
+    '''Control datepicker.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Tx_fechainicio As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Control Calendar1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Calendar1 As Global.System.Web.UI.WebControls.Calendar
+    Protected WithEvents datepicker As Global.System.Web.UI.HtmlControls.HtmlInputText
     
     '''<summary>
     '''Control Label5.
@@ -122,22 +113,13 @@ Partial Public Class ConfirmarReserva
     Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control Tx_fechafin.
+    '''Control datepicker1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Tx_fechafin As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Control Calendar2.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Calendar2 As Global.System.Web.UI.WebControls.Calendar
+    Protected WithEvents datepicker1 As Global.System.Web.UI.HtmlControls.HtmlInputText
     
     '''<summary>
     '''Control Label6.

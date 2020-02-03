@@ -11,6 +11,8 @@
     Friend precio As String
     Friend nhabitaciones As Integer
     Friend nombreAloj As String
+    Friend nombreestab As String
     Friend ubicacion As String
     Friend Nombre_usuario As String = ""
+    Friend sql As String
 End Module

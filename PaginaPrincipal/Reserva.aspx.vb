@@ -7,6 +7,24 @@ Public Class Reserva
     Dim cadenaconexion As String = "server=192.168.106.14;database=retoethazi;user id=root2;password=root2;port=3306"
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         cnn = New MySqlConnection(cadenaconexion)
+        'If nombreestab IsNot "" Then
+
+        '    sql = "SELECT Id, Nombre, Categoria, Ubicacion, Precio FROM establecimiento WHERE (Nombre LIKE '" & nombreestab & "%')"
+
+        '    Try
+        '        cnn.Open()
+
+        '    Catch ex As Exception
+
+        '    Finally
+        '        If cnn.State = ConnectionState.Open Then
+        '            cnn.Close()
+
+        '        End If
+        '    End Try
+        '    GridView2.DataSourceID = Nothing
+        '    GridView2.DataSourceID = sql
+        'End If
         If Clicada1 = True Then
             ImageButton7.Visible = False
         ElseIf Clicada2 = True Then
@@ -122,18 +140,61 @@ Public Class Reserva
         If RadioButtonList1.SelectedValue = "Camping" Then
             GridView2.DataSourceID = Nothing
             GridView2.DataSourceID = SqlCamping.ID
+            Me.ImageButton7.Visible = True
+            Me.ImageButton5.Visible = True
+            Me.ImageButton6.Visible = True
+            Me.Lbl_ubicacionfoto.Text = "Camping"
         End If
         If RadioButtonList1.SelectedValue = "Albergue" Then
             GridView2.DataSourceID = Nothing
             GridView2.DataSourceID = SqlAlbregue.ID
+            Me.ImageButton7.Visible = True
+            Me.ImageButton5.Visible = True
+            Me.ImageButton6.Visible = True
+            Me.Lbl_ubicacionfoto.Text = "Albergue"
         End If
         If RadioButtonList1.SelectedValue = "Alojamiento" Then
             GridView2.DataSourceID = Nothing
             GridView2.DataSourceID = Sqlalojamiento.ID
+            Me.ImageButton7.Visible = True
+            Me.ImageButton5.Visible = True
+            Me.ImageButton6.Visible = True
+            Me.Lbl_ubicacionfoto.Text = "Alojamiento"
         End If
     End Sub
 
     Protected Sub AdRotator2_AdCreated(sender As Object, e As AdCreatedEventArgs) Handles AdRotator2.AdCreated
 
+    End Sub
+
+    'Private Sub ImageButton1_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton1.Click
+    '    cnn = New MySqlConnection(cadenaconexion)
+    '    If nombreestab IsNot "" Then
+
+    '        sql = "SELECT Id, Nombre, Categoria, Ubicacion, Precio FROM establecimiento WHERE (Nombre LIKE '" & nombreestab & "%')"
+
+    '        Try
+    '            cnn.Open()
+
+    '        Catch ex As Exception
+
+    '        Finally
+    '            If cnn.State = ConnectionState.Open Then
+    '                cnn.Close()
+
+    '            End If
+    '        End Try
+    '        GridView2.DataSourceID = Nothing
+    '        GridView2.DataSourceID = SqlDataSource2.ID
+    '    End If
+    'End Sub
+
+    Protected Sub GridView2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView2.SelectedIndexChanged
+
+        Dim row As GridViewRow = GridView2.SelectedRow
+        nombreAloj = row.Cells(2).Text
+        precio = row.Cells(4).Text
+        ubicacion = row.Cells(5).Text
+        Response.Redirect("~/ConfirmarReserva.aspx")
     End Sub
 End Class
