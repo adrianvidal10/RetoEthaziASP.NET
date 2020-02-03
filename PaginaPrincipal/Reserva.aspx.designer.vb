@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class Reserva
     
     '''<summary>
-    '''Control form2.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents form2 As Global.System.Web.UI.HtmlControls.HtmlForm
-    
-    '''<summary>
     '''Control AdRotator2.
     '''</summary>
     '''<remarks>
@@ -30,6 +21,15 @@ Partial Public Class Reserva
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents AdRotator2 As Global.System.Web.UI.WebControls.AdRotator
+    
+    '''<summary>
+    '''Control form2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents form2 As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
     '''Control Image1.
@@ -57,6 +57,15 @@ Partial Public Class Reserva
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Button2 As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
+    '''Control Label1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Control ImageButton7.
@@ -104,42 +113,6 @@ Partial Public Class Reserva
     Protected WithEvents ImageButton1 As Global.System.Web.UI.WebControls.ImageButton
     
     '''<summary>
-    '''Control Label1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control datepicker.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents datepicker As Global.System.Web.UI.HtmlControls.HtmlInputText
-    
-    '''<summary>
-    '''Control Label2.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control datepicker1.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents datepicker1 As Global.System.Web.UI.HtmlControls.HtmlInputText
-    
-    '''<summary>
     '''Control HyperLink1.
     '''</summary>
     '''<remarks>
@@ -158,13 +131,13 @@ Partial Public Class Reserva
     Protected WithEvents RadioButtonList1 As Global.System.Web.UI.WebControls.RadioButtonList
     
     '''<summary>
-    '''Control Lbl_Ubicacion.
+    '''Control Lbl_ubicacionfoto.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Lbl_Ubicacion As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Lbl_ubicacionfoto As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Control GridView2.
@@ -174,6 +147,15 @@ Partial Public Class Reserva
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents GridView2 As Global.System.Web.UI.WebControls.GridView
+    
+    '''<summary>
+    '''Control Lbl_Ubicacion.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Lbl_Ubicacion As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Control SqlCamping.
@@ -212,11 +194,29 @@ Partial Public Class Reserva
     Protected WithEvents Sqlalojamiento As Global.System.Web.UI.WebControls.SqlDataSource
     
     '''<summary>
-    '''Control SqlUbicacion.
+    '''Control SqlUbicacionBizkaia.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents SqlUbicacion As Global.System.Web.UI.WebControls.SqlDataSource
+    Protected WithEvents SqlUbicacionBizkaia As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''Control SqlUbicacionAlaba.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlUbicacionAlaba As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''Control Sqlubicaciongipuzkoa.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Sqlubicaciongipuzkoa As Global.System.Web.UI.WebControls.SqlDataSource
 End Class

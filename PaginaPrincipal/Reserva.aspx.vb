@@ -14,7 +14,13 @@ Public Class Reserva
         ElseIf Clicada3 = True Then
             ImageButton6.Visible = False
         End If
-
+        If Nombre_usuario IsNot "" Then
+            Me.Button1.Visible = False
+            Me.Button2.Visible = False
+            Me.HyperLink1.Visible = True
+            Label1.Text = "Hola usuario: " & Nombre_usuario
+            Me.Label1.Visible = True
+        End If
         'sql = "SELECT Nombre,Ubicacion,Categoria,Precio FROM " & tipo & ""
 
 
@@ -44,63 +50,71 @@ Public Class Reserva
     End Sub
 
     Protected Sub ImageButton7_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton7.Click
+        cnn = New MySqlConnection(cadenaconexion)
         Clicada1 = True
         Clicada2 = False
         Clicada3 = False
-        Me.Lbl_Ubicacion.Text = "Bizkaia"
+
+        Me.Lbl_ubicacionfoto.Text = "Bizkaia"
+
         If RadioButtonList1.SelectedIndex = True Then
             tipo = RadioButtonList1.SelectedValue
         End If
+
+
+
         If Not TextBox1.Text = "" Then
             busqueda = TextBox1.Text
         End If
-        If Not datepicker.Value = "" Then
-            F_Inicio = datepicker.Value
-        End If
-        If Not datepicker1.Value = "" Then
-            F_Fin = datepicker1.Value
-        End If
-        Response.Redirect("~/Reserva.aspx")
+
+        '/ Response.Redirect("~/Reserva.aspx")
+        GridView2.DataSourceID = Nothing
+        GridView2.DataSourceID = SqlUbicacionBizkaia.ID
+        Me.ImageButton7.Visible = False
+        Me.ImageButton5.Visible = True
+        Me.ImageButton6.Visible = True
     End Sub
 
     Protected Sub ImageButton5_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton5.Click
+        cnn = New MySqlConnection(cadenaconexion)
         Clicada1 = False
         Clicada2 = True
         Clicada3 = False
-        Me.Lbl_Ubicacion.Text = "Gipuzkoa"
+        Me.Lbl_ubicacionfoto.Text = "Gipuzkoa"
+        GridView2.DataSourceID = Nothing
+        GridView2.DataSourceID = Sqlubicaciongipuzkoa.ID
         If RadioButtonList1.SelectedIndex = True Then
             tipo = RadioButtonList1.SelectedValue
         End If
         If Not TextBox1.Text = "" Then
             busqueda = TextBox1.Text
         End If
-        If Not datepicker.Value = "" Then
-            F_Inicio = datepicker.Value
-        End If
-        If Not datepicker1.Value = "" Then
-            F_Fin = datepicker1.Value
-        End If
-        Response.Redirect("~/Reserva.aspx")
+
+        ' Response.Redirect("~/Reserva.aspx")
+        Me.ImageButton7.Visible = True
+        Me.ImageButton5.Visible = False
+        Me.ImageButton6.Visible = True
     End Sub
 
     Protected Sub ImageButton6_Click(sender As Object, e As ImageClickEventArgs) Handles ImageButton6.Click
+        cnn = New MySqlConnection(cadenaconexion)
         Clicada1 = False
         Clicada2 = False
         Clicada3 = True
-        Me.Lbl_Ubicacion.Text = "Alava"
+        Me.Lbl_ubicacionfoto.Text = "Alava"
+        GridView2.DataSourceID = Nothing
+        GridView2.DataSourceID = SqlUbicacionAlaba.ID
         If RadioButtonList1.SelectedIndex = True Then
             tipo = RadioButtonList1.SelectedValue
         End If
         If Not TextBox1.Text = "" Then
             busqueda = TextBox1.Text
         End If
-        If Not datepicker.Value = "" Then
-            F_Inicio = datepicker.Value
-        End If
-        If Not datepicker1.Value = "" Then
-            F_Fin = datepicker1.Value
-        End If
-        Response.Redirect("~/Reserva.aspx")
+
+        'Response.Redirect("~/Reserva.aspx")
+        Me.ImageButton7.Visible = True
+        Me.ImageButton5.Visible = True
+        Me.ImageButton6.Visible = False
     End Sub
 
     Private Sub RadioButtonList1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles RadioButtonList1.SelectedIndexChanged
@@ -109,5 +123,17 @@ Public Class Reserva
             GridView2.DataSourceID = Nothing
             GridView2.DataSourceID = SqlCamping.ID
         End If
+        If RadioButtonList1.SelectedValue = "Albergue" Then
+            GridView2.DataSourceID = Nothing
+            GridView2.DataSourceID = SqlAlbregue.ID
+        End If
+        If RadioButtonList1.SelectedValue = "Alojamiento" Then
+            GridView2.DataSourceID = Nothing
+            GridView2.DataSourceID = Sqlalojamiento.ID
+        End If
+    End Sub
+
+    Protected Sub AdRotator2_AdCreated(sender As Object, e As AdCreatedEventArgs) Handles AdRotator2.AdCreated
+
     End Sub
 End Class

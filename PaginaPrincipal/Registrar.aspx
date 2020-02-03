@@ -10,7 +10,7 @@
 <body>
     <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/XMLFile1.xml" Width="100%" Height="100%"  />
     <form id="form1" runat="server">
-        <div style="height: 505px">
+        <div  aria-orientation="horizontal" style="height: 100%; clip: rect(auto, auto, auto, auto); width: 100%; position: absolute; top: 20px; left: 162px; margin-left: 80px;" aria-expanded="undefined">
             <p style="height: 495px; margin-left: 360px">
                 <br />
                 <br />
