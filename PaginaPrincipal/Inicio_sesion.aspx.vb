@@ -21,7 +21,7 @@ Public Class Inicio_Sesion
     Private Sub Btn_Aceptar_Click(sender As Object, e As EventArgs) Handles Btn_Aceptar.Click
         cnn = New MySqlConnection(cadenaconexion)
         Dim cmd1 = cnn.CreateCommand()
-        cmd1.CommandText = "SELECT Dni,contrasena, Nombre FROM cliente WHERE Dni= @dni AND contrasena= @contrasena"
+        cmd1.CommandText = "SELECT Dni,contrasena, Nombre, IdCliente FROM cliente WHERE Dni= @dni AND contrasena= @contrasena"
         cmd1.Parameters.AddWithValue("@dni", Me.Tx_Dni.Text)
         dni = Me.Tx_Dni.Text
         cmd1.Parameters.AddWithValue("@contrasena", Me.Tx_Contra.Text)
@@ -33,6 +33,7 @@ Public Class Inicio_Sesion
             dr = cmd1.ExecuteReader
             If dr.Read Then
                 Nombre_usuario = dr("Nombre").ToString
+                id_usuario = dr("IdCliente").ToString
             End If
 
             If dr.HasRows Then

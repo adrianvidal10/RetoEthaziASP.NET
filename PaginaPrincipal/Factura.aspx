@@ -8,9 +8,7 @@
     <title></title>
 </head>
 <body>
-    <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/XMLFile1.xml" Width="100%" Height="100%"  />
     <form id="form1" runat="server">
-      <div  aria-orientation="horizontal" style="height: 125%; clip: rect(auto, auto, auto, auto); width: 100%; position: absolute; top: 20px; left: 162px; margin-left: 80px; margin-bottom: 0px;" aria-expanded="undefined"
         <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" Text="FACTURA"></asp:Label>
         <br />
         <br />
@@ -66,7 +64,6 @@
         <br />
         <br />
         <br />
-        <div />
     </form>
 </body>
 </html>

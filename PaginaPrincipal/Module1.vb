@@ -1,5 +1,7 @@
 ﻿Module Module1
     Friend dni As String
+    Friend id_usuario As String
+    Friend id_alojamiento As String
     Friend busqueda As String
     Friend F_Inicio As String
     Friend F_Fin As String

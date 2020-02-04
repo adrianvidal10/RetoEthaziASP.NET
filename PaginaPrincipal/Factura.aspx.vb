@@ -12,6 +12,7 @@ Public Class WebForm2
     Dim das As DataSet
     Dim adap As MySqlDataAdapter
     Dim cmd As MySqlCommand
+
     Dim cadenadeconexion As String = "server=192.168.106.14;database=retoethazi;user id=root2;password=root2;port=3306"
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         TextBox3.Text = nombreAloj
@@ -30,6 +31,7 @@ Public Class WebForm2
 
             dr = cmd.ExecuteReader
             If dr.Read Then
+
                 TextBox1.Text = dr("Nombre").ToString()
                 TextBox2.Text = dr("Apellido").ToString()
             End If
@@ -41,6 +43,27 @@ Public Class WebForm2
                 dr.Close()
             End If
         End Try
+        sql = "SELECT IdReser FROM reservas WHERE Dni= @dni"
+        Dim cmd1 As New MySqlCommand(sql, cnn)
+        cmd1.Parameters.AddWithValue("@dni", dni)
+        Dim dr1 As MySqlDataReader = Nothing
+        Try
+            cnn.Open()
+
+            dr1 = cmd1.ExecuteReader
+            If dr1.Read Then
+
+                TextBox9.Text = dr1("IdReser").ToString()
+
+            End If
+        Catch ex As Exception
+
+        Finally
+            If cnn.State = ConnectionState.Open Then
+                cnn.Close()
+                dr1.Close()
+            End If
+        End Try
         Dim eleccion As String = Nothing
         If tipo = "alojamiento" Then
             eleccion = "reserva_alo"
@@ -49,22 +72,7 @@ Public Class WebForm2
         ElseIf tipo = "albergue" Then
             eleccion = "reserva_alb"
         End If
-        sql = "inser Id_Reserva FROM reservas where Dni = " & dni
-        Try
-            cnn.Open()
 
-            dr = cmd.ExecuteReader
-            If dr.Read Then
-                reserva = dr("IdReserva").ToString()
-            End If
-        Catch ex As Exception
-        Finally
-            If cnn.State = ConnectionState.Open Then
-                cnn.Close()
-                dr.Close()
-            End If
-        End Try
-        TextBox9.Text = reserva
     End Sub
 
     Protected Sub btnGenerarPdf_Click(sender As Object, e As EventArgs) Handles btnGenerarPdf.Click
@@ -72,9 +80,11 @@ Public Class WebForm2
             'Creamos el objeto documento PDF
             Dim documentoPDF As New Document
             PdfWriter.GetInstance(documentoPDF,
-                    New FileStream("C:\Users\admin1\Downloads\" & reserva & ".pdf", FileMode.Create))
+                    New FileStream("C:\Users\admin1\Downloads\RESERVA" & reserva & ".pdf", FileMode.Append))
             documentoPDF.Open()
-
+            documentoPDF.Add(New Paragraph("~\PaginaPrincipal\fotos\Sin título.png",
+                      FontFactory.GetFont(FontFactory.TIMES, 11,
+                          iTextSharp.text.Font.NORMAL)))
             'Escribimos el texto en el objeto documento PDF
             documentoPDF.Add(New Paragraph(Label10.Text & "                                                 " & TextBox9.Text,
                       FontFactory.GetFont(FontFactory.TIMES, 11,
