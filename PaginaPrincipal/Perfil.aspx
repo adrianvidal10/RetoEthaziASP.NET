@@ -10,23 +10,28 @@
 <body>
      <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/XMLFile1.xml" Width="100%" Height="100%"  />
     <form id="form1" runat="server">
+         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        
         <div aria-orientation="horizontal" style="height: 125%; clip: rect(auto, auto, auto, auto); width: 100%; position: absolute; top: 20px; left: 162px; margin-left: 80px; margin-bottom: 0px;" aria-expanded="undefined">
-                <asp:Label ID="lbl_Nombre" runat="server" Text="Nombre"></asp:Label>
+                <asp:Label ID="lbl_Nombre" runat="server" Text="Nombre" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_Nombre" runat="server"></asp:TextBox>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
+&nbsp;&nbsp;&nbsp;
                 <br />
                 <br />
-                <asp:Label ID="lbl_Apellido" runat="server" Text="Apellido"></asp:Label>
+                <asp:Label ID="lbl_Apellido" runat="server" Text="Apellido" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_Apellido" runat="server"></asp:TextBox>
                 <br />
                 <br />
-                <asp:Label ID="lbl_Dni" runat="server" Text="Dni"></asp:Label>
+                <asp:Label ID="lbl_Dni" runat="server" Text="Dni" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_Dni" runat="server"></asp:TextBox>
                 <br />
                 <br />
-                <asp:Label ID="lbl_Sexo" runat="server" Text="Sexo"></asp:Label>
+                <asp:Label ID="lbl_Sexo" runat="server" Text="Sexo" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:DropDownList ID="DropDownList1" runat="server">
                     <asp:ListItem>F</asp:ListItem>
@@ -34,32 +39,32 @@
                 </asp:DropDownList>
                 <br />
                 <br />
-                <asp:Label ID="lbl_Edad" runat="server" Text="Edad"></asp:Label>
+                <asp:Label ID="lbl_Edad" runat="server" Text="Edad" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_Edad" runat="server"></asp:TextBox>
                 <br />
                 <br />
-                <asp:Label ID="lbl_Telefono" runat="server" Text="Telefono"></asp:Label>
+                <asp:Label ID="lbl_Telefono" runat="server" Text="Telefono" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_Telefono" runat="server"></asp:TextBox>
                 <br />
                 <br />
-                <asp:Label ID="lbl_Gmail" runat="server" Text="Gmail"></asp:Label>
+                <asp:Label ID="lbl_Gmail" runat="server" Text="Gmail" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_Gmail" runat="server"></asp:TextBox>
                 <br />
                 <br />
-                <asp:Label ID="lbl_Contrasena" runat="server" Text="Contraseña"></asp:Label>
+                <asp:Label ID="lbl_Contrasena" runat="server" Text="Contraseña" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_Contrasena" runat="server"></asp:TextBox>
                 &nbsp;&nbsp;&nbsp;<asp:Button ID="Button3" runat="server" Text="Cambiar contraseña" />
                 <br />
                 <br />
-                <asp:Label ID="lbl_NuevaContrasena" runat="server" Text="Nueva Contraseña"></asp:Label>
+                <asp:Label ID="lbl_NuevaContrasena" runat="server" Text="Nueva Contraseña" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_NuevaContrasena" runat="server"></asp:TextBox>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Label ID="lbl_ConfirmarContrasena" runat="server" Text="Confirmar Contraseña"></asp:Label>
+                <asp:Label ID="lbl_ConfirmarContrasena" runat="server" Text="Confirmar Contraseña" Font-Bold="True" Font-Size="Large" ForeColor="White"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="tx_ConfirmarContrasena" runat="server"></asp:TextBox>
                 <br />
@@ -101,6 +106,8 @@
                         <asp:Parameter DefaultValue="dni" Name="@dni" />
                     </SelectParameters>
                 </asp:SqlDataSource>
+                <asp:Timer ID="Timer1" runat="server" Interval="5000" >
+                </asp:Timer>
             <br />
             <br />
             <br />

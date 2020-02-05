@@ -2,6 +2,7 @@
 Public Class Perfil
     Inherits System.Web.UI.Page
     Dim cnn As MySqlConnection
+    Dim cont As Integer = 10
     Dim sql As String
     Dim resultado As Integer
     Dim cadenaconexion As String = "server=192.168.106.14;database=retoethazi;user id=root2;password=root2;port=3306"
@@ -87,7 +88,8 @@ Public Class Perfil
             Try
                 cnn.Open()
                 resultado = cmd.ExecuteNonQuery
-                MsgBox("Actualizadas " & resultado & "filas")
+                '  Timer1.Enabled = True
+                Label1.Text = "Datos guardados y actualizados"
             Catch ex As Exception
                 MsgBox(ex.Message)
             Finally
@@ -128,7 +130,7 @@ Public Class Perfil
 
 
         End If
-
+        Button1.Visible = True
 
     End Sub
 
@@ -147,4 +149,13 @@ Public Class Perfil
         Me.tx_Contrasena.Enabled = True
         Me.Button2.Visible = True
     End Sub
+
+    'Protected Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+    '    cont = cont - 1
+    '    If cont = 0 Then
+    '        Timer1.Enabled = False
+    '        Label1.Visible = False
+    '    End If
+    'End Sub
 End Class

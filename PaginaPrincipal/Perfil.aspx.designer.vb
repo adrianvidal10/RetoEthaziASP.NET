@@ -32,6 +32,15 @@ Partial Public Class Perfil
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
+    '''Control ScriptManager1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
+    
+    '''<summary>
     '''Control lbl_Nombre.
     '''</summary>
     '''<remarks>
@@ -48,6 +57,15 @@ Partial Public Class Perfil
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents tx_Nombre As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Control Label1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Control lbl_Apellido.
@@ -264,4 +282,13 @@ Partial Public Class Perfil
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+    
+    '''<summary>
+    '''Control Timer1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Timer1 As Global.System.Web.UI.Timer
 End Class

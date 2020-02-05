@@ -54,7 +54,7 @@ Public Class WebForm2
             If dr1.Read Then
 
                 TextBox9.Text = dr1("IdReser").ToString()
-
+                reserva = Me.TextBox9.Text
             End If
         Catch ex As Exception
 
@@ -76,6 +76,7 @@ Public Class WebForm2
     End Sub
 
     Protected Sub btnGenerarPdf_Click(sender As Object, e As EventArgs) Handles btnGenerarPdf.Click
+        Label11.Text = "La factura se ha generado en la carpeta descargas"
         Try
             'Creamos el objeto documento PDF
             Dim documentoPDF As New Document

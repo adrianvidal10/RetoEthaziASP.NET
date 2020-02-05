@@ -19,7 +19,7 @@
             <asp:Button ID="Button1" runat="server" Text="Iniciar Sesion" Width="100px" PostBackUrl="~/Inicio_sesion.aspx" />
 &nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" Text="Registrarse" Width="100px" float="right" PostBackUrl="~/Registrar.aspx"/>
-            &nbsp;&nbsp;&nbsp;<asp:Label ID="Label1" runat="server" Visible="False" Font-Size="X-Large"></asp:Label>
+            &nbsp;&nbsp;&nbsp;<asp:Label ID="Label1" runat="server" Visible="False" Font-Size="X-Large" ForeColor="White"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button3" runat="server" Height="35px" PostBackUrl="~/PaginaPrincipal.aspx" Text="Atras" Width="77px" />
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -41,7 +41,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="TextBox1" runat="server" style="margin-bottom: 7px" ToolTip="Elige el nombre del establecimineto"></asp:TextBox>
-            <asp:ImageButton ID="ImageButton1" runat="server" Height="31px" ImageUrl="~/fotos/Lupa.png" Width="35px" />
+            <asp:ImageButton ID="ImageButton1" runat="server" Height="38px" ImageUrl="~/fotos/Lupa.png" Width="48px" />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
             <br />
